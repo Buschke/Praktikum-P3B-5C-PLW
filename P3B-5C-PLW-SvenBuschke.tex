@@ -52,7 +52,7 @@
 \usepackage{fontspec}
 \usepackage{pdfpages}
 \setmainfont{Linux Libertine O}%
-   [Ligatures={Common,Rare,Historic}, Numbers=OldStyle]
+   [Ligatures={Common,Historic}, Numbers=OldStyle]
 \setulcolor{red} 										% set underline color
 \setstcolor{green} 										% set overstriking color
 \sethlcolor{green} 										% set highlighting color
@@ -81,7 +81,9 @@
   \null
   \thispagestyle{empty}
   \begin{center}\leavevmode
-       \normalfont 	\includegraphics[width=.96\columnwidth]{Deckblatt-P3B-signed-20210823.pdf}
+       \normalfont
+abc
+       \includepdf[pages=-,scale=0.9,pagecommand={}]{Deckblatt-P3B-signed-20210825.pdf}
        \newpage
        \includegraphics[width=0.165\columnwidth]{lmu-seal.pdf}
        \includegraphics[width=0.35\columnwidth]{lmu-logo.pdf}
@@ -147,70 +149,62 @@ $S_\lambda(\lambda,T) = \frac{2}{}$
 \paragraph{Kontaktspannung}
 Die Kontaktspannung ist die Spannung, die entsteht, wenn sich zwei nicht gleiche Materialien berühren. Es gilt: $U_g = \hat{U}_g - U_{kontakt}$
 \paragraph{charakteristisches Spektrum}
-Das charakteristische Spektrum werden gebildet von charakteristischen Wellenlängen $\lambda$ bei bestimmten Übergängen. Es gilt $E = \hbar \fraq{c}{\lambda}$.
+Das charakteristische Spektrum werden gebildet von charakteristischen Wellenlängen $\lambda$ bei bestimmten Übergängen. Es gilt $E = \hbar \frac{c}{\lambda}$.
 \paragraph{Stoßverbreiterung bei Spektrallampen}
 Durch Stöße zwischen Atomen werden die Spektrallinien unscharf. Hierdurch kommt es zu Energieverschiebungen, die sich auf die Wellenlänge des emittierten Photons auswirkt und das Spektrum entsprechend verbreitert.
 \paragraph{Bändermodell}
 Anders als bei einzelnen Atomen kommt es bei Molekülen und noch mehr bei Festkörpern zu weiteren Energieniveaus. Diese lassen sich zu einem Energieband zusammenfassen.
 
-
-
-Teilversuch 2:
-
-
-Teilversuch 3:\\
-
-
-
-Teilversuch 4:\\
-
-
-\subsubsection{Theoretischer Hintergrund}
-\paragraph{Teilversuch 1: Bestimmung des Planckschen Wirkungsquantums mit dem Photoeffekt mit Vorversuch Bestimmung des Quecksilberspektrums und der Absoprtionsspektren der Farbfilter}
+\subsubsection{Theoretischer Hintergrund / Überblick Versuche}
+\paragraph{Vorversuch zu Teilversuch 1: Vorversuch Bestimmung des Quecksilberspektrums und der Absoprtionsspektren der Farbfilter}
+Im Vorversuch werden die charakteristischen Wellenlängen der Quecksilberlampe und der Xenonlampe bestimmt und die Farbfilter zugeordnet.
+\paragraph{Teilversuch 1: Bestimmung des Planckschen Wirkungsquantums mit dem Photoeffekt}
+Hier wird mit einer Vakuumphotozelle und Quecksilberdamplampe das Plancksche Wirkungsquantum bestimmmt.
 \paragraph{Teilversuch 2: Bestimmung des Planckschen Wirkungsquantums mit Hilfe von Leuchtdioden}
-
+Im Teilversuch wird mit Leuchtdioden das Plancksche Wirkungsquantum durch Messen der Durchlassspannung von LEDs bestimmt.
 \section{Versuchsdurchführung und Auswertung}
 \subsection{Teilversuch 1: Bestimmung des Planckschen Wirkungsquantums mit dem Photoeffekt mit Vorversuch Bestimmung des Quecksilberspektrums und der Absoprtionsspektren der Farbfilter}
-\subsubsection{Versuchsvorbereitung}
-\paragraph{Grundlagen des Versuchs}
-
-\paragraph{Erläuterung verwendeter Formelzeichen}
-\paragraph{Versuchsziel}
-
-
-
-\paragraph{Erläuterung der Messmethoden}
-\paragraph{schematische Skizzen}
+\subsubsection{Versuchsvorbereitung, Grundlagen des Versuches, Erläuterung verwendeter Formelzeichen, Versuchsziel, Erläuterung der Messmethoden, schematische Skizzen, Planung der Durchführung, Versuchsplanung, Versuchsdurchführung}
 Versuchsaufbau\\
 Das Licht der Quecksilberdampflampe fällt auf den Eingang der Glasfaser. Hier nehmen wir das Quecksilberspektrum auf und bestimmen die Wellenlänge. Gleiches mit der Xenondampflampe.
 Nun wird die Photozelle verwendet mit zwei Blendeinstellungen B1 zum Einstellen des Strahldruchmessers und B2 der Lichtintensität. Unter Verwendung von Widerstand R, Erdung verbunden mit der Masses des Cassys zur Vermeidung von Störungen, werden verschiedene Spannungen (-3V bis +3V) angelegt und mit dem Sensor-Cassey gemessen.
 Wir nehmen die U-I-Kennlinine auf (Hg-Linie) und bestimmen im linearen Bereich des U-I-Diagramms die Schnittpunkte der Geraden mit der U2-Achse, mit Verwendung einer Ausgleichsgerade.
 
-\paragraph{Planung der Durchführung}
-\subsubsection{Versuchsplanung}
-\subsubsection{Versuchsdurchführung}
-\subsubsection{Versuchsergebnisse und -auswertung}
 
+\subsubsection{Versuchsergebnisse und -auswertung}
+Nachfolgend sieht man die graphische Bestimmung des Planckschen Wirkungsquantums aus den Wertepaaren $(U_g,\nu)$:\\
+
+Hier sind noch die Python-Diagramme einzufügen (muss noch nachgeliefert werden).
+
+Die Dioden beginnen zu leuchten, wenn die Schwellenspannung erreicht ist. 
+Die Methode führt zu recht eindeutigen Ergebnissen. Der Fehler liegt hierbei im Bereich plus minus .
+
+Gemäß Gaußscher Unsicherheit $\frac{\Delta G}{G} = \sqrt{(a\frac{\Delta x}{x})^2 + (b \frac{\Delta y}{y})^2}$ liegt eine Messunsicherheit vor wie folgt:
+Messbreite liegt bei plus minus 
 
 \subsection{Teilversuch 2: Bestimmung des Planckschen Wirkungsquantums mit Hilfe von Leuchtdioden}
-\paragraph{Erläuterung verwendeter Formelzeichen}
-\paragraph{Versuchsziel}
-\paragraph{Erläuterung der Messmethoden}
-\paragraph{schematische Skizzen}
+\subsubsection{Erläuterung verwendeter Formelzeichen, Versuchsziel, Erläuterung der Messmethoden, schematische Skizzen, Planung der Durchführung, Versuchsplanung, Versuchsdurchführung}
 Stromquelle über Power-Cassey mit Sensor-Cassey als Amperemeter. Die Leuchtdiode wird gemäß Versuchsanleitung mit einer einstellbaren Stromquelle betrieben, Strom und Spannung werden gemessen. U-I-Kennlinien für infrarote, gelbe, grüne und blaue LED sind zu zeichnen.
 Es ist die Wellenlänge zu bestimmen.
 
-\paragraph{Planung der Durchführung}
-\subsubsection{Versuchsplanung}
-\subsubsection{Versuchsdurchführung}
-\subsubsection{Versuchsergebnisse}
-\subsubsection{Versuchsauswertung}
+\subsubsection{Versuchsergebnisse und Versuchsauswertung}
+Aus den gemessenen Wertepaaren $(U_D, \nu)$ ergibt sich nachfolgend graphisch das Planksche Wirkungsquantum wie folgt:\\
+
+Hier sind noch die Python-Diagramme einzufügen (muss noch nachgeliefert werden).\\
+
+Ein Vergleich der beiden Methoden zur Bestimmung von h im Rahmen der Unsicherheiten das präzisere Ergebnisse bei Teilversuch 1 zu erreichen ist.
+
+\section{Anhang - Ausdrucke Vorversuch}
+\includepdf[pages=-,scale=0.9,pagecommand={}]{PLW-Vorversuch.pdf}
+
+\section{Anhang - Ausdrucke Teilversuch 1}
+\includepdf[pages=-,scale=0.9,pagecommand={}]{PLW-TV1.pdf}
+
+\section{Anhang - Ausdrucke Teilversuch 2}
+\includepdf[pages=-,scale=0.9,pagecommand={}]{PLW-TV2.pdf}
 
 
+\section{Anhang --- Laborheft mit Testat}
+\includepdf[pages=-,scale=0.9,pagecommand={}]{PLW-Testat.pdf}
 
-\section{Anhang - Fotos}
-%\includegraphics[width=.96\columnwidth]{figures/IMG_5291.jpg}
-\section{Anhang - Laborheft}
-%\includepdf[pages=-,scale=0.9,pagecommand={}]{Laborheft-P3B-SPL.pdf}
-       
 \end{document}
